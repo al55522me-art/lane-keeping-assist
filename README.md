@@ -6,4 +6,9 @@ Processing stages: Raw input → Binary lane mask → Overlay with offset metric
 
 # Analyzed video example
 
-![Processing pipeline](analysis/analyzed_video.gif.gif)
+<div align="center">
+<video width="800" height="288" controls autoplay loop muted playsinline>
+  <source src="analysis/analyzed_video.mp4" type="video/mp4">
+  <p>Your browser doesn't support video.</p>
+</video>
+</div>
