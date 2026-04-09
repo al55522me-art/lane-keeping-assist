@@ -1,4 +1,4 @@
-# lane-keeping-assist
+## lane-keeping-assist
 Lane Keeping Assist with U-Net Segmentation  Real-time lane detection and steering assistance system trained on TuSimple dataset.  Analyzes dashcam video, calculates lane offset, generates steering commands (LEFT/RIGHT/STRAIGHT),  and provides confidence metrics + warnings. 
 
 Pipeline: Input video → U-Net mask → Offset calculation → Commands → Real-time dashboard with FPS, angle, confidence.
@@ -17,7 +17,7 @@ Processing stages: Raw input → Binary lane mask → Overlay with offset metric
 </div>
 
 
-# Analyzed video example
+## Analyzed video example
 
 <div align="center">
 
@@ -26,3 +26,19 @@ Processing stages: Raw input → Binary lane mask → Overlay with offset metric
 **Processing pipeline:** U-Net mask → Lane overlay → Real-time offset/angle/confidence metrics
 
 </div>
+
+## Quick start 
+
+# 1. Clone
+git clone https://github.com/YOUR_USERNAME/lane-keeping-assist.git
+cd lane-keeping-assist
+
+# 2. Install (Mac M4)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+
+# 3. Analyze video
+python analysis/video_analyzer.py test_video.mp4
+
+# 4. Live webcam demo
+python live_demo/lane_keeping.py
