@@ -6,4 +6,10 @@ Processing stages: Raw input → Binary lane mask → Overlay with offset metric
 
 # Analyzed video example
 
-![Overlay Sample](analysis/analyzed_video-2.png)
+<div align="center">
+
+![Lane Keeping Assist](analysis/analyzed_video-2.gif)
+
+**Processing pipeline:** U-Net mask → Lane overlay → Real-time offset/angle/confidence metrics
+
+</div>
